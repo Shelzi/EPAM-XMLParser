@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://www.example.com/library"
+            xsi:schemaLocation="http://www.example.com/library  bookStructure.xsd">
+   <book>
+      <title>Everyday Italian</title>
+      <genre>Cooking</genre>
+      <author>Giada De Laurentiis</author>
+      <year>2005</year>
+      <pages>500</pages>
+   </book>
+   <book>
+      <title>Makaroni</title>
+      <genre>Cooking</genre>
+      <author>Selzgusta de Mangusta</author>
+      <year>2002</year>
+      <pages>500</pages>
+   </book>
+   <book>
+      <title>Harry Potter</title>
+      <genre>Fantasy</genre>
+      <author>J K. Rowling</author>
+      <year>2005</year>
+      <pages>500</pages>
+   </book>
+   <book>
+      <title>Learning XML</title>
+      <genre>Science</genre>
+      <author>Erik T. Ray</author>
+      <year>2003</year>
+      <pages>500</pages>
+   </book>
+   <newspaper>
+      <title>Вестник "Нафтан"</title>
+      <publisher>Нафтан</publisher>
+      <date>12-12-2012</date>
+      <website>www.naftan.by</website>
+      <pages>12</pages>
+
+   </newspaper>
+</library>
