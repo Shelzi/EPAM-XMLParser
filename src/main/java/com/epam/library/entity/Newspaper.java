@@ -1,19 +1,18 @@
-package com.epam.library.entity;
+package main.java.com.epam.library.entity;
 
 import java.time.LocalDate;
-import java.time.YearMonth;
 import java.util.Objects;
 
-public class Newspaper extends Publication{
+public class Newspaper extends Publication {
     private String publisher;
     private String website;
     private LocalDate date;
 
-    public Newspaper(){
+    public Newspaper() {
 
     }
 
-    public Newspaper(String publisher, String website, LocalDate date){
+    public Newspaper(String publisher, String website, LocalDate date) {
         this.publisher = publisher;
         this.website = website;
         this.date = date;
@@ -43,11 +42,6 @@ public class Newspaper extends Publication{
 
     public void setDate(LocalDate date) {
         this.date = date;
-    }
-
-    @Override
-    public GenreType getGenre() {
-        return null;
     }
 
     @Override

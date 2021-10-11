@@ -1,6 +1,6 @@
-package com.epam.library.builder;
+package main.java.com.epam.library.builder;
 
-import com.epam.library.entity.*;
+import main.java.com.epam.library.entity.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -16,7 +16,6 @@ import java.time.Year;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 public class DomBuilder {
     private static final int DEFAULT_DISCOUNT = 0;
@@ -59,7 +58,6 @@ public class DomBuilder {
                 Publication publication = buildPublication(element);
                 publicationList.add(publication);
             }
-
         } catch (IOException e) {
             errorMessage.append("file ").append(xmlFileName).append(" can't be found or opened");
             throw new Exception(errorMessage.toString(), e);
@@ -92,12 +90,11 @@ public class DomBuilder {
                 publication = new Newspaper(); // if publication is Newspaper
                 break;
         }
-
         return buildPublicationFactory(element, publication);
     }
 
     private Publication buildPublicationFactory(Element element, Publication publication) {
-        
+
         String fTitle = (getElementTextContent(element, XmlTagType.TITLE.toString()));
         publication.setTitle(fTitle);
 
@@ -113,7 +110,6 @@ public class DomBuilder {
                 break;
             default:
         }
-
         return publication;
     }
 
@@ -145,5 +141,4 @@ public class DomBuilder {
         Node node = nodeList.item(0);
         return node.getTextContent();
     }
-
 }

@@ -1,4 +1,4 @@
-package com.epam.library.entity;
+package main.java.com.epam.library.entity;
 
 public enum GenreType {
     ADVENTURES,
@@ -14,6 +14,6 @@ public enum GenreType {
     public String toString() {
         return name()
                 .toLowerCase()
-                .replace("_","-");
+                .replace("_", "-");
     }
 }

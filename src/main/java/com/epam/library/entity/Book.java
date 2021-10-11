@@ -1,9 +1,9 @@
-package com.epam.library.entity;
+package main.java.com.epam.library.entity;
 
 import java.time.Year;
 import java.util.Objects;
 
-public class Book extends Publication{
+public class Book extends Publication {
     private String author;
     private GenreType genre;
     private Year year;
@@ -14,7 +14,7 @@ public class Book extends Publication{
         this.year = year;
     }
 
-    public Book(){
+    public Book() {
 
     }
 

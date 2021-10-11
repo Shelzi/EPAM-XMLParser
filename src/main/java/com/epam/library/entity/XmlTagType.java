@@ -1,4 +1,4 @@
-package com.epam.library.entity;
+package main.java.com.epam.library.entity;
 
 public enum XmlTagType {
     AUTHOR,
@@ -12,7 +12,6 @@ public enum XmlTagType {
     TITLE,
     WEBSITE,
     YEAR;
-
 
     @Override
     public String toString() {
